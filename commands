@@ -87,6 +87,7 @@ case "$1" in
     echo "       Host: $IP"
     echo "       Public port: $PORT"
     echo
+    printf '{"host":"%s", port":"%s"}\n' "$IP" "$PORT""
     ;;
 
   redis:link)
